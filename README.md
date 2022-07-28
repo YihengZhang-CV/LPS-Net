@@ -3,9 +3,10 @@ Lightweight and Progressively-Scalable Networks for Semantic Segmentation
 
 The original paper can be found [here](https://arxiv.org/pdf/2207.13600.pdf).
 
-<p align="center">
-  <img src="img/intro-sota.png" width="600"/>
-</p>
+<figure>
+<img src="img/intro-sota.png" alt="Speed-mIoU" style="width:100%">
+<figcaption> Comparisons of inference speed/accuracy tradeoff on Cityscapes validation set. Inference speed of LPS-Net (-S, -M, and -L) are measured on an NVIDIA GTX 1080Ti GPU with TensorRT.</figcaption>
+</figure>
 
 ## Getting Started
 ### Requiremenets
@@ -31,7 +32,7 @@ LPS-Net-S on Cityscapes validation set: mean IoU=73.9%
 ```
 
 ### Measure the Latency
-To measure the latency of LPS-Net-S with TensorRT in FP32 mode, run:
+To measure the latency of LPS-Net-S on your device with TensorRT in FP32 mode, run:
 ```commandline
 python latency.py
 ```
